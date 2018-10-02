@@ -1,9 +1,9 @@
 FROM eclipse/stack-base:ubuntu
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV SNAP=/snap/snapcraft/current
-ENV SNAP_NAME=snapcraft
-ENV PATH=/snap/bin:$PATH
+ENV DEBIAN_FRONTEND noninteractive \
+    SNAP=/snap/snapcraft/current \
+    SNAP_NAME=snapcraft \
+    PATH=/snap/bin:$PATH
 
 RUN sudo apt-get update && \
     sudo apt-get dist-upgrade -y && \
