@@ -4,7 +4,7 @@ EXPOSE 4403 22
 ENV DEBIAN_FRONTEND noninteractive \
     SNAP=/snap/snapcraft/current \
     SNAP_NAME=snapcraft \
-    PATH=/snap/bin:$PATH
+    PATH=/snap/bin:$PATH \
     TERM=xterm
 
 RUN sudo apt-get update && \
