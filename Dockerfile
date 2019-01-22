@@ -28,5 +28,3 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY bin/snapcraft-wrapper /snap/bin/snapcraft
-
-USER user
